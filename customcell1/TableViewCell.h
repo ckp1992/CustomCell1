@@ -9,5 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface TableViewCell : UITableViewCell
-
+{
+__weak IBOutlet UIImageView *imageview;
+__weak IBOutlet UILabel *namelabel;
+__weak IBOutlet UILabel *declabel;
+__weak IBOutlet UILabel *loclabel;
+}
+@property (copy,nonatomic) UIImage *image;
+@property (copy,nonatomic) NSString *name;
+@property (copy,nonatomic) NSString *dec;
+@property (copy,nonatomic) NSString *loc;
 @end

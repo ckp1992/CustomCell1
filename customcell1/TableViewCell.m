@@ -10,6 +10,11 @@
 
 @implementation TableViewCell
 
+@synthesize image;
+@synthesize name;
+@synthesize dec;
+@synthesize loc;
+
 - (void)awakeFromNib {
     // Initialization code
 }
@@ -20,4 +25,32 @@
     // Configure the view for the selected state
 }
 
+- (void) setImage:(UIImage *)image{
+    if(![image isEqual:self.image]){
+        self.image = [image copy];
+        imageview.image = self.image;
+    }
+}
+
+- (void)setName:(NSString *)name{
+    if(![name isEqual:self.name]){
+        self.name = [name copy];
+        namelabel.text = self.name;
+    }
+}
+
+- (void)setDec:(NSString *)dec{
+    if(![dec isEqual:self.dec]){
+        self.dec = [dec copy];
+        declabel.text = self.dec;
+    }
+}
+
+- (void)setLoc:(NSString *)loc{
+    if(! [loc isEqual:self.loc]){
+        self.loc = [loc copy];
+        loclabel.text = loc;
+    }
+    
+}
 @end
