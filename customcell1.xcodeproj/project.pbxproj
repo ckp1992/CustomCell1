@@ -101,10 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				7F05C3F019E912010032A899 /* AppDelegate.h */,
-				7F05C41919E914CE0032A899 /* ViewController.xib */,
 				7F05C3F119E912010032A899 /* AppDelegate.m */,
 				7F05C3F319E912010032A899 /* ViewController.h */,
 				7F05C3F419E912010032A899 /* ViewController.m */,
+				7F05C41919E914CE0032A899 /* ViewController.xib */,
 				7F05C3F619E912010032A899 /* Main.storyboard */,
 				7F05C3F919E912010032A899 /* Images.xcassets */,
 				7F05C3FB19E912010032A899 /* LaunchScreen.xib */,

@@ -53,4 +53,29 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+//table Data source里面的方法
+
+//返回行数
+- (NSInteger) tableView:(UITableView *) tableView numberOfRowsInSection:(NSInteger)section{
+    return [self.dataList count];
+}
+
+//新建某一行并且返回
+- (UITableViewCell *)tableView:(UITableView *) tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *CustomCellIdentifier = @"CustomCellIdentifier";
+    static BOOL nibsRegistered = NO;
+    
+    if(!nibsRegistered){
+        UINib *nib = [UINib nibWithNibName:@"TableViewCell" bundle:nil];
+        [tableView registerNib:nib forCellReuseIdentifier:CustomCellIdentifier];
+        nibsRegistered = YES;
+    }
+    
+    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CustomCellIdentifier];
+    
+    NSUInteger
+    return nil;
+}
+
 @end
