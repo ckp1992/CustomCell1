@@ -14,6 +14,8 @@
 		7F05C3FA19E912010032A899 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F05C3F919E912010032A899 /* Images.xcassets */; };
 		7F05C3FD19E912010032A899 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F05C3FB19E912010032A899 /* LaunchScreen.xib */; };
 		7F05C40919E912010032A899 /* customcell1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F05C40819E912010032A899 /* customcell1Tests.m */; };
+		7F05C41519E912920032A899 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F05C41319E912920032A899 /* TableViewCell.m */; };
+		7F05C41619E912920032A899 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F05C41419E912920032A899 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		7F05C40219E912010032A899 /* customcell1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = customcell1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F05C40719E912010032A899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F05C40819E912010032A899 /* customcell1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = customcell1Tests.m; sourceTree = "<group>"; };
+		7F05C41219E912920032A899 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		7F05C41319E912920032A899 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		7F05C41419E912920032A899 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 				7F05C3F919E912010032A899 /* Images.xcassets */,
 				7F05C3FB19E912010032A899 /* LaunchScreen.xib */,
 				7F05C3EC19E912010032A899 /* Supporting Files */,
+				7F05C41219E912920032A899 /* TableViewCell.h */,
+				7F05C41319E912920032A899 /* TableViewCell.m */,
+				7F05C41419E912920032A899 /* TableViewCell.xib */,
 			);
 			path = customcell1;
 			sourceTree = "<group>";
@@ -200,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F05C3F819E912010032A899 /* Main.storyboard in Resources */,
+				7F05C41619E912920032A899 /* TableViewCell.xib in Resources */,
 				7F05C3FD19E912010032A899 /* LaunchScreen.xib in Resources */,
 				7F05C3FA19E912010032A899 /* Images.xcassets in Resources */,
 			);
@@ -220,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F05C3F519E912010032A899 /* ViewController.m in Sources */,
+				7F05C41519E912920032A899 /* TableViewCell.m in Sources */,
 				7F05C3F219E912010032A899 /* AppDelegate.m in Sources */,
 				7F05C3EF19E912010032A899 /* main.m in Sources */,
 			);
