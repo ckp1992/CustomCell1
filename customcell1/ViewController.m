@@ -7,12 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "TableViewCell.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+@synthesize dataList;
+@synthesize imageList;
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (strong,nonatomic) NSArray *dataList;
+@property (strong,nonatomic) NSArray *imageList;
 
 @end
 
