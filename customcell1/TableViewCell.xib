@@ -36,6 +36,12 @@
                     </label>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="declabel" destination="MfP-iS-cRh" id="rfS-2V-kD1"/>
+                <outlet property="imageview" destination="rOe-Rx-l3m" id="sJn-VP-hko"/>
+                <outlet property="loclabel" destination="lUi-9a-fqK" id="CFr-EX-Hit"/>
+                <outlet property="namelabel" destination="kkJ-uJ-64S" id="k1x-pT-Frh"/>
+            </connections>
             <point key="canvasLocation" x="182" y="186"/>
         </tableViewCell>
     </objects>
