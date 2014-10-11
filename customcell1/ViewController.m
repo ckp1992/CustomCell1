@@ -74,8 +74,25 @@
     
     TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CustomCellIdentifier];
     
-    NSUInteger
+    NSUInteger row = [indexPath row];
+    NSDictionary *rowData = [self.dataList objectAtIndex:row];
+    
+    cell.name = [rowData objectForKey:@"name"];
+    cell.dec = [rowData objectForKey:@"dec"];
+    cell.loc = [rowData objectForKey:@"loc"];
+    cell.image = [self.imageList objectAtIndex:row];
+    
+    return cell;
+}
+
+//Table Delegate Methods里的方法
+- (CGFloat) tableView:(UITableView *) tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 60.0;
+}
+
+- (NSIndexPath *) tableView:(UITableView *) tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     return nil;
 }
+
 
 @end
