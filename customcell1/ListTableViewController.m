@@ -88,6 +88,14 @@
     
     TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CustomCellIdentifier" forIndexPath:indexPath];
     
+    NSUInteger row = [indexPath row];
+    NSDictionary *rowData = [self.dataList objectAtIndex:row];
+    
+    cell.name = [rowData objectForKey:@"name"];
+    cell.dec = [rowData objectForKey:@"dec"];
+    cell.loc = [rowData objectForKey:@"loc"];
+    cell.image = [self.imageList objectAtIndex:row];
+    
     return cell;
 }
 
